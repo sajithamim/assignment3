@@ -1,38 +1,152 @@
+/* src/App.css */
+
+/* Basic styling for the TodoApp */
 .App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for AddTodo component */
+input[type="text"] {
+  width: calc(100% - 100px);
+  padding: 10px;
+  margin-right: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-todo-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.add-todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-todo-button {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
   color: white;
+  background-color: blue; /* Ensure this is applied */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.add-todo-button i {
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-todo-button:hover {
+  background-color: darkblue; /* Ensure this is applied on hover */
+}
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Styling for TodoList component */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+.todo-item span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.todo-item button {
+  margin-left: 10px;
+}
+.todo-item:hover {
+  background-color: #f9f9f9;
+}
+/* Styling for completed tasks
+.completed {
+  text-decoration: line-through;
+  color: #888;
+} */
+
+/* Basic styling for filter section */
+.filter-container {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-container button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Optionally, disable focus styling if you had applied any */
+.filter-container button:focus {
+  outline: none;
+  color: inherit; /* Maintain current color on focus */
+}
+/* Styling for the common filter icon and title */
+.filter-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between the icon and filter buttons */
+}
+
+.filter-icon i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.filter-icon span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Styling for filter buttons container */
+.filter-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.filter i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.filter:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
 }

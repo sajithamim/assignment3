@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# To-Do Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents 
 
-## Available Scripts
+1. Introduction(#introduction)
+2. Installation(#installation)
+4. Usage(#usage)
+5. Automated Version Incrementing
+6. Configuration(#configuration)
 
-In the project directory, you can run:
+## Introduction
+To-Do List Manager
 
-### `npm start`
+This is a simple yet powerful task management application built using React. With this app, you can efficiently manage your tasks with the following features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Add New Tasks: Easily add new tasks to your to-do list with a simple text input.
+Mark Tasks as Complete: Toggle tasks between completed and pending statuses with a single click.
+Delete Tasks: Remove tasks from your list when they are no longer needed.
+Filter Tasks: View tasks based on their status—All, Completed, or Pending.
+Persist Tasks: Tasks are saved in local storage, ensuring that they are retained even after a page refresh.
+Features
+Intuitive User Interface: A clean and user-friendly interface designed to make task management easy and effective.
+Responsive Design: The application is fully responsive, making it accessible on various devices and screen sizes.
+Local Storage Integration: Tasks are stored locally in your browser's storage, so you don't lose your data when you refresh the page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To get started with this project, you need to have the following installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Node.js:** Make sure you have Node.js installed. This project requires Node.js version X.X.X or higher. You can download and install it from [nodejs.org](https://nodejs.org/). -> Version: 20.17.0
 
-### `npm run build`
+2. **npm or Yarn:** This project uses npm for package management. You can use npm, which comes bundled with Node.js, or install Yarn as an alternative. If you choose to use Yarn, make sure you have it installed. You can install Yarn from [yarnpkg.com](https://yarnpkg.com/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installing Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After setting up Node.js and npm or Yarn, follow these steps to install the project dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/your-username/todo-list-manager.git
+   cd repository
+   npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After setting up your project, you can use it by following these instructions:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To start the development server and run the application locally, use the following command:
+npm start
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ Assignments
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Question 1: DSA Given an array of integers, return the length of the longest increasing subsequence. A subsequence is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements. For example, given the array [10, 9, 2, 5, 3, 7, 101, 18], the longest increasing subsequence is [2, 3, 7, 101], and its length is 4.
+2. Question 2: MongoDB Aggregation Consider a MongoDB collection named sales with documents.
+3. Create a React application that allows users to manage a to-do list with the following features:
 
-### Code Splitting
+    * Add new tasks
+    * Mark tasks as complete
+    * Delete tasks
+4. Filter tasks by all, completed, and pending
+5. Persist tasks in the local storage so that they are retained after a page refresh
+                                                                                                                               
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
